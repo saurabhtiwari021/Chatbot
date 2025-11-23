@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jharkhand Travel Bot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="chatbot">
+    <div id="chatbot-header">
+      🌍 Jharkhand Travel Bot
+      <span id="close-btn">✖</span>
+    </div>
+    <div id="chatbot-body"></div>
+    <div id="chatbot-input">
+      <input type="text" id="user-input" placeholder="Ask something...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <div id="chatbot-icon">💬</div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
